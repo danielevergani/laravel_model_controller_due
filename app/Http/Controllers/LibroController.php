@@ -9,6 +9,7 @@ class LibroController extends Controller
 {
     public function index(){
         $libri = Libro::all();
+        dd($libri);
         return view('home');
     }
 }
